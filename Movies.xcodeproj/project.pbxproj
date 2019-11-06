@@ -24,6 +24,10 @@
 		FC67562C23733D9F006521F8 /* URLSessionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67562B23733D9F006521F8 /* URLSessionProvider.swift */; };
 		FC67562F23733DBF006521F8 /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67562E23733DBF006521F8 /* Provider.swift */; };
 		FC67563123733DD0006521F8 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563023733DD0006521F8 /* Service.swift */; };
+		FC67563423733EC1006521F8 /* MovieDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563323733EC1006521F8 /* MovieDTO.swift */; };
+		FC67563623733EE6006521F8 /* TrendingMovies.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563523733EE6006521F8 /* TrendingMovies.swift */; };
+		FC67563823733EF9006521F8 /* GenreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563723733EF9006521F8 /* GenreDTO.swift */; };
+		FC67563A23733F21006521F8 /* GenresDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563923733F21006521F8 /* GenresDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +52,10 @@
 		FC67562B23733D9F006521F8 /* URLSessionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProvider.swift; sourceTree = "<group>"; };
 		FC67562E23733DBF006521F8 /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
 		FC67563023733DD0006521F8 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		FC67563323733EC1006521F8 /* MovieDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDTO.swift; sourceTree = "<group>"; };
+		FC67563523733EE6006521F8 /* TrendingMovies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingMovies.swift; sourceTree = "<group>"; };
+		FC67563723733EF9006521F8 /* GenreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDTO.swift; sourceTree = "<group>"; };
+		FC67563923733F21006521F8 /* GenresDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +122,7 @@
 		FC67561723733C93006521F8 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				FC67563223733EAA006521F8 /* DTOs */,
 				FC67562D23733DAF006521F8 /* Protocols */,
 				FC67562A23733D8B006521F8 /* Provider */,
 				FC67562123733D29006521F8 /* Enums */,
@@ -159,6 +168,17 @@
 				FC67563023733DD0006521F8 /* Service.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		FC67563223733EAA006521F8 /* DTOs */ = {
+			isa = PBXGroup;
+			children = (
+				FC67563323733EC1006521F8 /* MovieDTO.swift */,
+				FC67563523733EE6006521F8 /* TrendingMovies.swift */,
+				FC67563723733EF9006521F8 /* GenreDTO.swift */,
+				FC67563923733F21006521F8 /* GenresDTO.swift */,
+			);
+			path = DTOs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +296,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC67563823733EF9006521F8 /* GenreDTO.swift in Sources */,
 				FC67561C23733CE4006521F8 /* URLSessionExtension.swift in Sources */,
+				FC67563423733EC1006521F8 /* MovieDTO.swift in Sources */,
 				FC67563123733DD0006521F8 /* Service.swift in Sources */,
 				FC675604237339A1006521F8 /* ViewController.swift in Sources */,
 				FC67561A23733CCF006521F8 /* EncodableExtension.swift in Sources */,
@@ -285,9 +307,11 @@
 				FC67561E23733D00006521F8 /* URLRequestExtension.swift in Sources */,
 				FC675600237339A1006521F8 /* AppDelegate.swift in Sources */,
 				FC67562923733D77006521F8 /* HTTPTask.swift in Sources */,
+				FC67563A23733F21006521F8 /* GenresDTO.swift in Sources */,
 				FC67562523733D52006521F8 /* ParametersEncoding.swift in Sources */,
 				FC67562F23733DBF006521F8 /* Provider.swift in Sources */,
 				FC67562C23733D9F006521F8 /* URLSessionProvider.swift in Sources */,
+				FC67563623733EE6006521F8 /* TrendingMovies.swift in Sources */,
 				FC67560A237339A1006521F8 /* Movies.xcdatamodeld in Sources */,
 				FC67562723733D63006521F8 /* NetworkError.swift in Sources */,
 			);
