@@ -29,6 +29,7 @@
 		FC67563823733EF9006521F8 /* GenreDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563723733EF9006521F8 /* GenreDTO.swift */; };
 		FC67563A23733F21006521F8 /* GenresDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563923733F21006521F8 /* GenresDTO.swift */; };
 		FC67563D23733F7F006521F8 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563C23733F7F006521F8 /* MoviesService.swift */; };
+		FC675642237341AA006521F8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC675641237341AA006521F8 /* CustomTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		FC67563723733EF9006521F8 /* GenreDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreDTO.swift; sourceTree = "<group>"; };
 		FC67563923733F21006521F8 /* GenresDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresDTO.swift; sourceTree = "<group>"; };
 		FC67563C23733F7F006521F8 /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
+		FC675641237341AA006521F8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,9 @@
 		FC6755FE237339A1006521F8 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				FC67564023734196006521F8 /* Reusable */,
+				FC67563F2373414F006521F8 /* Controllers */,
+				FC67563E23734146006521F8 /* Views */,
 				FC67561723733C93006521F8 /* NetworkLayer */,
 				FC6755FF237339A1006521F8 /* AppDelegate.swift */,
 				FC675603237339A1006521F8 /* ViewController.swift */,
@@ -190,6 +195,28 @@
 				FC67563C23733F7F006521F8 /* MoviesService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FC67563E23734146006521F8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FC67563F2373414F006521F8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		FC67564023734196006521F8 /* Reusable */ = {
+			isa = PBXGroup;
+			children = (
+				FC675641237341AA006521F8 /* CustomTableViewCell.swift */,
+			);
+			path = Reusable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +340,7 @@
 				FC67563123733DD0006521F8 /* Service.swift in Sources */,
 				FC675604237339A1006521F8 /* ViewController.swift in Sources */,
 				FC67561A23733CCF006521F8 /* EncodableExtension.swift in Sources */,
+				FC675642237341AA006521F8 /* CustomTableViewCell.swift in Sources */,
 				FC67562023733D1F006521F8 /* URLComponentsExtension.swift in Sources */,
 				FC67562323733D40006521F8 /* HTTPMethod.swift in Sources */,
 				FC67561E23733D00006521F8 /* URLRequestExtension.swift in Sources */,
