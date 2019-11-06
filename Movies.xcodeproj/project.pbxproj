@@ -30,6 +30,7 @@
 		FC67563A23733F21006521F8 /* GenresDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563923733F21006521F8 /* GenresDTO.swift */; };
 		FC67563D23733F7F006521F8 /* MoviesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67563C23733F7F006521F8 /* MoviesService.swift */; };
 		FC675642237341AA006521F8 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC675641237341AA006521F8 /* CustomTableViewCell.swift */; };
+		FC6756442373421C006521F8 /* MoviesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6756432373421C006521F8 /* MoviesListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		FC67563923733F21006521F8 /* GenresDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenresDTO.swift; sourceTree = "<group>"; };
 		FC67563C23733F7F006521F8 /* MoviesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesService.swift; sourceTree = "<group>"; };
 		FC675641237341AA006521F8 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		FC6756432373421C006521F8 /* MoviesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 		FC67563E23734146006521F8 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				FC6756432373421C006521F8 /* MoviesListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -349,6 +352,7 @@
 				FC67563A23733F21006521F8 /* GenresDTO.swift in Sources */,
 				FC67562523733D52006521F8 /* ParametersEncoding.swift in Sources */,
 				FC67562F23733DBF006521F8 /* Provider.swift in Sources */,
+				FC6756442373421C006521F8 /* MoviesListView.swift in Sources */,
 				FC67563D23733F7F006521F8 /* MoviesService.swift in Sources */,
 				FC67562C23733D9F006521F8 /* URLSessionProvider.swift in Sources */,
 				FC67563623733EE6006521F8 /* TrendingMovies.swift in Sources */,
