@@ -142,16 +142,16 @@
 		FC6755FE237339A1006521F8 /* Movies */ = {
 			isa = PBXGroup;
 			children = (
+				FC67561723733C93006521F8 /* NetworkLayer */,
 				FC67564023734196006521F8 /* Reusable */,
 				FC67563F2373414F006521F8 /* Controllers */,
 				FC67563E23734146006521F8 /* Views */,
-				FC67561723733C93006521F8 /* NetworkLayer */,
+				FCB14AA323748D2B0005A577 /* CoreData */,
 				FC6755FF237339A1006521F8 /* AppDelegate.swift */,
 				FC675603237339A1006521F8 /* ViewController.swift */,
 				FC67560B237339A4006521F8 /* Assets.xcassets */,
 				FC67560D237339A4006521F8 /* LaunchScreen.storyboard */,
 				FC675610237339A4006521F8 /* Info.plist */,
-				FC675608237339A1006521F8 /* Movies.xcdatamodeld */,
 			);
 			path = Movies;
 			sourceTree = "<group>";
@@ -262,6 +262,14 @@
 				FC67564A237342F2006521F8 /* MoviesTableDelegate.swift */,
 			);
 			path = MoviesList;
+			sourceTree = "<group>";
+		};
+		FCB14AA323748D2B0005A577 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FC675608237339A1006521F8 /* Movies.xcdatamodeld */,
+			);
+			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
