@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
            application to it. This property is optional since there are legitimate
            error conditions that could cause the creation of the store to fail.
           */
-          let container = NSPersistentContainer(name: "DesafioOPovo")
+          let container = NSPersistentContainer(name: "Movies")
           container.loadPersistentStores(completionHandler: { (_, error) in
               if let error = error as NSError? {
                   fatalError("Unresolved error \(error), \(error.userInfo)")

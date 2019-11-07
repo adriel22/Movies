@@ -16,6 +16,7 @@ class MoviesDetailsViewController: UIViewController {
     private let genres: String?
     private let star = UIBarButtonItem(image: UIImage(systemName: "star"), style: .done,
     target: self, action: #selector(favoritesButtonAction))
+    private let coreDataManager = CoreDataManager()
     init(movie: MovieDTO, image: UIImage?, genres: String?) {
         self.movie = movie
         self.image = image
@@ -37,6 +38,13 @@ class MoviesDetailsViewController: UIViewController {
         self.view = customView
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if coreDataManager.searchForMovie(withName: movie.title) != nil {
+            toggleBarButtonIcon()
+        }
+    }
+
     private func setNavigationBar() {
         self.title = movie.title
         self.navigationController?.navigationBar.prefersLargeTitles = false
@@ -48,7 +56,14 @@ class MoviesDetailsViewController: UIViewController {
     }
 
     @objc func favoritesButtonAction() {
-
+        toggleBarButtonIcon()
+        if star.image == UIImage(systemName: "star") {
+            coreDataManager.deleteMovie(withName: movie.title)
+        }
+        if star.image == UIImage(systemName: "star.fill") {
+            coreDataManager.saveMovie(name: movie.title, genres: genres ?? "",
+                                      overview: movie.overview, date: movie.releaseDate, image: image)
+        }
     }
 
     private func toggleBarButtonIcon() {
