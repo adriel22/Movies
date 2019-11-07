@@ -105,6 +105,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FC09AB642373B72B008D7330 /* MoviesDetails */ = {
+			isa = PBXGroup;
+			children = (
+				FC67564C2373432C006521F8 /* MoviesDetailViewController.swift */,
+			);
+			path = MoviesDetails;
+			sourceTree = "<group>";
+		};
 		FC12E87B2373ADDC00AC4309 /* Search */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,8 +239,8 @@
 		FC67563F2373414F006521F8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FC09AB642373B72B008D7330 /* MoviesDetails */,
 				FC6756452373428F006521F8 /* MoviesList */,
-				FC67564C2373432C006521F8 /* MoviesDetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
