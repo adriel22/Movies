@@ -21,18 +21,22 @@ extension MoviesListViewController: UISearchResultsUpdating {
     }
 
     @objc func searchMovies() {
-
-        let service = MovieService.searchMovie(searchName)
-        let session = URLSessionProvider()
-        session.request(type: TrendingMovies.self, service: service) { (result) in
-            switch result {
-            case .success(let result):
+        if searchName.isEmpty {
+            self.requestMovies()
+        } else {
+            let service = MovieService.searchMovie(searchName)
+            let session = URLSessionProvider()
+            session.request(type: TrendingMovies.self, service: service) { (result) in
+                switch result {
+                case .success(let result):
                     self.movies = result.movies
-            case .failure(let error):
-                print(error)
-            }
+                case .failure(let error):
+                    print(error)
+                }
 
+            }
         }
+
     }
 
 }

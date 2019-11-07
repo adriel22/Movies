@@ -11,7 +11,7 @@ extension MoviesListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let cell = tableView.cellForRow(at: indexPath) as? CustomTableViewCell {
 
-            let controller = MoviesDetailViewController(movie: self.movies[indexPath.row],
+            let controller = MoviesDetailsViewController(movie: self.movies[indexPath.row],
                                                         image: cell.icon.image, genres: cell.subTitle.text)
             self.navigationController?.pushViewController(controller, animated: true)
         }

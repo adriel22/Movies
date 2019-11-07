@@ -29,23 +29,17 @@ extension MoviesListViewController: UITableViewDataSource {
         })
         cell.subTitle.text = movieGenresName
 
-        let dispatch = DispatchGroup()
-        var image: UIImage? = UIImage()
-
         let service = MovieService.getImage(movie.poster)
         let session = URLSessionProvider()
-        dispatch.enter()
         session.request(type: Data.self, service: service) { (result) in
             switch result {
             case .success(let data):
-                image = UIImage(data: data)
+                DispatchQueue.main.sync {
+                    cell.icon.image = UIImage(data: data)
+                }
             case .failure(let error):
                 print(error)
             }
-            dispatch.leave()
-        }
-        dispatch.notify(queue: .main) {
-            cell.icon.image = image
         }
 
         return cell
