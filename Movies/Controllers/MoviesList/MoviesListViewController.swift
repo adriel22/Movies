@@ -46,6 +46,9 @@ class MoviesListViewController: UIViewController {
     private func setNavigation() {
         self.title = "Movies"
         self.navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Favorites", style: .plain,
+                                                            target: self, action: #selector(favoritesButtonAction))
+
         let search = UISearchController(searchResultsController: nil)
         search.searchResultsUpdater = self
         search.searchBar.placeholder = "Search for a movie"
@@ -81,4 +84,8 @@ class MoviesListViewController: UIViewController {
         }
     }
 
+    @objc func favoritesButtonAction() {
+        let favorites = FavoritesViewController()
+        self.navigationController?.pushViewController(favorites, animated: true)
+    }
 }
