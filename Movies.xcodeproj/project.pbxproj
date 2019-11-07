@@ -37,6 +37,7 @@
 		FC675649237342C8006521F8 /* MoviesTableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC675648237342C8006521F8 /* MoviesTableDataSource.swift */; };
 		FC67564B237342F2006521F8 /* MoviesTableDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67564A237342F2006521F8 /* MoviesTableDelegate.swift */; };
 		FC67564D2373432C006521F8 /* MoviesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC67564C2373432C006521F8 /* MoviesDetailViewController.swift */; };
+		FCB14AA523748DF80005A577 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB14AA423748DF80005A577 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		FC675648237342C8006521F8 /* MoviesTableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableDataSource.swift; sourceTree = "<group>"; };
 		FC67564A237342F2006521F8 /* MoviesTableDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesTableDelegate.swift; sourceTree = "<group>"; };
 		FC67564C2373432C006521F8 /* MoviesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviesDetailViewController.swift; sourceTree = "<group>"; };
+		FCB14AA423748DF80005A577 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -268,6 +270,7 @@
 			isa = PBXGroup;
 			children = (
 				FC675608237339A1006521F8 /* Movies.xcdatamodeld */,
+				FCB14AA423748DF80005A577 /* CoreDataManager.swift */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 				FC67562C23733D9F006521F8 /* URLSessionProvider.swift in Sources */,
 				FC67563623733EE6006521F8 /* TrendingMovies.swift in Sources */,
 				FC67560A237339A1006521F8 /* Movies.xcdatamodeld in Sources */,
+				FCB14AA523748DF80005A577 /* CoreDataManager.swift in Sources */,
 				FC67562723733D63006521F8 /* NetworkError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
