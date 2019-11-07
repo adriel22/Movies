@@ -12,6 +12,7 @@ class MoviesListViewController: UIViewController {
         didSet {
             DispatchQueue.main.async {
                 self.customView.reloadData()
+                self.searchView.reloadData()
             }
         }
     }
@@ -22,8 +23,11 @@ class MoviesListViewController: UIViewController {
             }
         }
     }
+
     private let customView = MoviesListView()
-    let dispatch = DispatchGroup()
+    let searchView = MoviesListView()
+    var searchTimer: Timer?
+    var searchName: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,7 +47,11 @@ class MoviesListViewController: UIViewController {
         self.title = "Movies"
         self.navigationController?.navigationBar.prefersLargeTitles = true
         let search = UISearchController(searchResultsController: nil)
+        search.searchResultsUpdater = self
         search.searchBar.placeholder = "Search for a movie"
+        searchView.delegate = self
+        searchView.dataSource = self
+        search.view = searchView
         self.navigationItem.searchController = search
     }
 
